@@ -1,0 +1,60 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN">
+<html>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+   <head>
+      <title>Προσθήκη Μαθητή</title>
+   <style type="text/css">
+	table {
+	font-family:  arial;
+	font-size: small;
+	border: thin solid;
+	background-color: orange;
+    }
+    body {
+    background-image: url(background.gif);
+    }
+    p {
+    	font-family: arial;
+    	font-weight: bold;
+    	text-align:  center;
+    }
+    a {
+    	font-family: arial;
+    	font-size: small;
+    	font-weight: bold;
+    	text-indent:  10px;
+    }
+
+</style>
+   </head>
+<body>
+<p>Προσθήκη νέου μαθητή</p>
+<form action="insert.php" method="POST" >
+<table align="center">
+<tr>
+         <td>Κωδικός Μαθητή</td>
+         <td><input type="text" size="10" maxlength="10" name="student_id" /></td>
+</tr>
+<tr>
+         <td>Επώνυμο</td>
+         <td><input type="text" size="30" maxlength="30" name="eponymo" /></td>
+</tr>
+<tr>
+         <td>Όνομα</td>
+         <td><input type="text" size="20" maxlength="20" name="onoma" /></td>
+</tr>
+<tr>
+         <td>Τάξη</td>
+         <td><input type="text" size="5" maxlength="1" name="taxi" /></td>
+</tr>
+<tr>
+         <td>Τμήμα</td>
+         <td><input type="text" size="5" maxlength="3" name="tmima" /></td>
+</tr>
+</table>
+<p><input type="submit" name="formsubmit" value="Εισαγωγή" /></p>
+</form>
+<br><br>
+<p><a href="index.html">Επιστροφή</a></p>
+   </body>
+</html>
