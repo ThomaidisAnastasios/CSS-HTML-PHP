@@ -1,0 +1,41 @@
+body {
+  padding-left: 300px;
+  font-family: Times New Roman, Verdana;
+  color: purple;
+  background-color: #d8da3d }
+  
+#banner {
+
+	position: relative;
+	padding: 30px;
+	height: 100px;
+	width: 900px;
+	background-color: purple;
+	
+}
+
+	
+	
+  ul.navbar {
+    list-style-type: none;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    width: 200px}
+h1 {
+  font-family: Helvetica, Geneva, Arial,
+        SunSans-Regular, sans-serif;
+  font-size:15px;}
+ul.navbar li {
+  background: white;
+  margin: 10px;
+  padding: 5px;
+  border-right: 10px solid black }
+ul.navbar a {
+  text-decoration: none }
+
+#madeby {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: thin dotted ;
+  font-style: italic}

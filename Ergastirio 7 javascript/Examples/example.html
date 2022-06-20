@@ -1,0 +1,44 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Απλός υπολογιστής δύναμης</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript">
+
+function power(){
+   if((document.getElementById("input01").value == "")||(document.getElementById("input02").value == ""))
+  {
+    alert("* To όνομα και το έτος γέννησης είναι υποχρεωτικά πεδία! ");
+	var mytext = document.getElementById("input01"); 
+    mytext.focus(); 
+    return false;
+  }
+   else
+{
+  var currentTime = new Date();
+  var currentYear = currentTime.getFullYear();
+  smallname = document.getElementById("input01");
+  birth = window.document.forms[0].input02; 
+  age= currentYear-birth.value;
+  document.getElementById("result").innerText =smallname.value +" είσαι "+age+" χρονών";
+  return true;
+	}
+
+}
+</script>
+</head>
+
+<body>
+
+<form method="post" id="form01" action="#"> 
+<p>Όνομα: <input type="text" id="input01"  size="5"/> 
+Έτος γέννησης:<input type="text" id="input02" size="5"/>  
+<input type="button"  onclick="power()" value="Εισαγωγή" /> 
+<div id="result"> </div> 
+
+</form> 
+
+</body>
+</html>
